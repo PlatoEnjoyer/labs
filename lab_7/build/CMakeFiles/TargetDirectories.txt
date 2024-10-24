@@ -1,0 +1,3 @@
+/Users/timur/study_cpp/lab_7/build/CMakeFiles/example.dir
+/Users/timur/study_cpp/lab_7/build/CMakeFiles/edit_cache.dir
+/Users/timur/study_cpp/lab_7/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/timur/study_cpp/lab_7/build",
+  "command": "/usr/bin/clang++   -g -std=c++17 -arch arm64 -o CMakeFiles/example.dir/main.cpp.o -c /Users/timur/study_cpp/lab_7/main.cpp",
+  "file": "/Users/timur/study_cpp/lab_7/main.cpp",
+  "output": "CMakeFiles/example.dir/main.cpp.o"
+}
+]

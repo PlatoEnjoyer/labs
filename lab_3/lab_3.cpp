@@ -2,16 +2,27 @@
 
 using namespace std;
 
+
+// Вариант 5.
+// Установить i-ый бит числа х (0<x<10^9) в 0.
+
 int main()
 {
-    int i = 312;
-    int c;
+    int x; // 0111
+    int i; // 4
+    cin >> x;
+    cin >> i;
 
-    while (i > 0)
+    if (((1 << i) & x) == 0)
     {
-        c = i % 2;
-        cout << c;
-        i = i / 2;
+        cout << "i-ый бит числа x равен нулю, программа завершена" << endl;
     }
-    
+    else
+    {
+        x &= ~(1 << i);
+        cout << "i-ый бит числа x стал равен нулю" << endl;
+        cout << "x равно: " << x << endl;
+    }
+
+    return 0;
 }
