@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/timur/study_cpp/lab_7/functions.cpp" "CMakeFiles/example.dir/functions.cpp.o" "gcc" "CMakeFiles/example.dir/functions.cpp.o.d"
   "/Users/timur/study_cpp/lab_7/main.cpp" "CMakeFiles/example.dir/main.cpp.o" "gcc" "CMakeFiles/example.dir/main.cpp.o.d"
   )
 

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/example.dir/functions.cpp.o"
+  "CMakeFiles/example.dir/functions.cpp.o.d"
   "CMakeFiles/example.dir/main.cpp.o"
   "CMakeFiles/example.dir/main.cpp.o.d"
   "example"
