@@ -105,7 +105,7 @@ void matrix_processing(int matrix[100][100], int n)
         {
             for (int j = 0; j < n - i - 1; j++)
             {
-                if (count_of_primes[j] < count_of_primes[j+1])
+                if (count_of_primes[j] > count_of_primes[j+1])
                 {
                     int tmp[n];
 

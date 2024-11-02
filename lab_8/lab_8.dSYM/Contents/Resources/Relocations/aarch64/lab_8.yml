@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/timur/study_cpp/lab_8/lab_8'
+relocations:     []
+...
