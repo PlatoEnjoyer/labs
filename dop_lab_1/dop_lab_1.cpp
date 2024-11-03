@@ -25,7 +25,7 @@ int main()
 
     while (a > 0)
     {
-        if (value1 < value2)
+        if (value1 < value2 or (value1 == value2 && q1 < q2))
         {
             if (a < q2 && p1 > p2)
             {
