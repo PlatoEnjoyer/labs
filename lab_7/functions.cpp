@@ -16,7 +16,7 @@ void ReadData(int matrix[100][100], int n)
 
 void WriteData(int matrix[100][100], int n)
 {
-    cout << "-----------" << endl << "Результат программы:" << endl;
+    cout << "-----------" << endl;
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -105,9 +105,10 @@ void matrix_processing(int matrix[100][100], int n)
         {
             for (int j = 0; j < n - i - 1; j++)
             {
-                if (count_of_primes[j] > count_of_primes[j+1])
+                if (count_of_primes[j] < count_of_primes[j+1])
                 {
                     int tmp[n];
+                    int tmp_prime = count_of_primes[j];
 
                     for (int k = 0; k < n; k++)
                     {
@@ -117,11 +118,13 @@ void matrix_processing(int matrix[100][100], int n)
                     for (int k = 0; k < n; k++)
                     {
                         matrix[j][k] = matrix[j + 1][k];
+                        count_of_primes[j] = count_of_primes[j + 1];
                     }
 
                     for (int k = 0; k < n; k++)
                     {
                         matrix[j + 1][k] = tmp[k];
+                        count_of_primes[j + 1] = tmp_prime;
                     }
                 }
             }

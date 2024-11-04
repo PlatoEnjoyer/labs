@@ -7,6 +7,7 @@
 Удалить из последовательности числа, произведение цифр которых кратно 18, а среди оставшихся продублировать числа, 
 содержащие цифру 7, но не содержащие цифру 0.
 */
+
 bool is_multi_of_18(int a)
 {
     int multi = 1;
@@ -15,7 +16,7 @@ bool is_multi_of_18(int a)
     {
         int curr = a % 10;
         multi = multi * curr;
-        a %= 10;
+        a /= 10;
     }
 
     return bool(multi % 18 == 0);
@@ -39,6 +40,7 @@ bool is_contain_7_non_contain_0 (int a)
                 contain_7 = true;
             }
         }
+        a /= 10;
     }
 
     return contain_7;
@@ -49,7 +51,7 @@ bool is_contain_7_non_contain_0 (int a)
 int main()
 {
     int n;
-    int arr[10000];
+    int arr[20000];
 
     std::cin >> n;
 
@@ -66,10 +68,26 @@ int main()
             while (j < n)   
             {
                 arr[j] = arr[j + 1];
-                n--;
-                i--;
                 j += 1;
             }
+            i--;
+            n--;
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (is_contain_7_non_contain_0(arr[i]))
+        {
+            int j = n;
+            while (j > i + 1)
+            {
+                arr[j] = arr[j - 1];
+                j--;
+            }
+            arr[i + 1] = arr[i];
+            i++;
+            n++;
         }
     }
 

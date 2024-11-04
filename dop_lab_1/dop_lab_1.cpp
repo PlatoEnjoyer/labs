@@ -7,6 +7,12 @@
  Разовая поездка стоит P1, и цена не зависит от уровня загрузки транспортного средства. 
  Для грузовика второго типа эти значения равны Q2 и P2 соответственно.
  Найдите минимальную стоимость перевозки A тонн груза.
+
+Формат ввода:
+Входные данные содержат пять натуральных чисел, не превышающих тысячи: Q1, P1, Q2, P2, A. Числа разделены пробелами.
+
+Формат вывода:
+Выведите одно число: минимально возможную цену.
 */
 
 int main()
@@ -20,30 +26,50 @@ int main()
 
     std::cin >> q1 >> p1 >> q2 >> p2 >> a;
 
-    float value1 = (float)p1/q1;
-    float value2 = (float)p2/q2;
 
     while (a > 0)
     {
-        if (value1 < value2 or (value1 == value2 && q1 < q2))
+        float cost1 = p1;
+        float cost2 = p2;
+        int counter1 = 1;
+        int counter2 = 1;
+        
+        if (q1 * counter1 >= a)
         {
-            if (a < q2 && p1 > p2)
+            cost1 = p1;
+        }
+        else
+        {
+            while (q1 * counter1 < a)
             {
-                ans += p2;
-                break;
+                cost1 += p1;
+                counter1 += 1;
             }
+        }
+
+        if (q2 * counter2 >= a)
+        {
+            cost2 = p2;
+        }
+        else
+        {
+            while (q2 * counter2 < a)
+            {
+                cost2 += p2;
+                counter2 += 1;
+            }
+        }
+
+        
+        if (cost1 < cost2)
+        {
             a -= q1;
             ans += p1;
         }
         else
         {
-            if (a < q1 && p2 > p1)
-            {
-                ans += p1;
-                break;
-            }
             a -= q2;
-            ans += p2;            
+            ans += p2;
         }
     }
 

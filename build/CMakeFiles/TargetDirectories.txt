@@ -1,0 +1,4 @@
+C:/Users/user/Desktop/labs/build/CMakeFiles/lab_7.dir
+C:/Users/user/Desktop/labs/build/CMakeFiles/lab_7_2.dir
+C:/Users/user/Desktop/labs/build/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/labs/build/CMakeFiles/rebuild_cache.dir
