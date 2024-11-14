@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lab_7.dir/functions.cpp.obj"
+  "CMakeFiles/lab_7.dir/functions.cpp.obj.d"
   "CMakeFiles/lab_7.dir/main.cpp.obj"
   "CMakeFiles/lab_7.dir/main.cpp.obj.d"
   "lab_7.exe"

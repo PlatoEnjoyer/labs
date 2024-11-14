@@ -53,20 +53,20 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\Desktop\labs\lab_7
+CMAKE_SOURCE_DIR = C:\Users\user\Desktop\labs\dop_lab_5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\Desktop\labs\build
+CMAKE_BINARY_DIR = C:\Users\user\Desktop\labs\dop_lab_5\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lab_7.dir/all
+all: CMakeFiles/dop_lab_5.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/lab_7.dir/codegen
+codegen: CMakeFiles/dop_lab_5.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,39 +74,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lab_7.dir/clean
+clean: CMakeFiles/dop_lab_5.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lab_7.dir
+# Target rules for target CMakeFiles/dop_lab_5.dir
 
 # All Build rule for target.
-CMakeFiles/lab_7.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\labs\build\CMakeFiles --progress-num=1,2,3 "Built target lab_7"
-.PHONY : CMakeFiles/lab_7.dir/all
+CMakeFiles/dop_lab_5.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\user\Desktop\labs\dop_lab_5\build\CMakeFiles --progress-num=1,2 "Built target dop_lab_5"
+.PHONY : CMakeFiles/dop_lab_5.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab_7.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/lab_7.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\build\CMakeFiles 0
-.PHONY : CMakeFiles/lab_7.dir/rule
+CMakeFiles/dop_lab_5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\dop_lab_5\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/dop_lab_5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\dop_lab_5\build\CMakeFiles 0
+.PHONY : CMakeFiles/dop_lab_5.dir/rule
 
 # Convenience name for target.
-lab_7: CMakeFiles/lab_7.dir/rule
-.PHONY : lab_7
+dop_lab_5: CMakeFiles/dop_lab_5.dir/rule
+.PHONY : dop_lab_5
 
 # codegen rule for target.
-CMakeFiles/lab_7.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/codegen
-.PHONY : CMakeFiles/lab_7.dir/codegen
+CMakeFiles/dop_lab_5.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/codegen
+.PHONY : CMakeFiles/dop_lab_5.dir/codegen
 
 # clean rule for target.
-CMakeFiles/lab_7.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/clean
-.PHONY : CMakeFiles/lab_7.dir/clean
+CMakeFiles/dop_lab_5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/clean
+.PHONY : CMakeFiles/dop_lab_5.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

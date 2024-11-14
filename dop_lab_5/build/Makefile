@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\Desktop\labs\lab_7
+CMAKE_SOURCE_DIR = C:\Users\user\Desktop\labs\dop_lab_5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\Desktop\labs\build
+CMAKE_BINARY_DIR = C:\Users\user\Desktop\labs\dop_lab_5\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\build\CMakeFiles C:\Users\user\Desktop\labs\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\dop_lab_5\build\CMakeFiles C:\Users\user\Desktop\labs\dop_lab_5\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Desktop\labs\dop_lab_5\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,65 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab_7
+# Target rules for targets named dop_lab_5
 
 # Build rule for target.
-lab_7: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lab_7
-.PHONY : lab_7
+dop_lab_5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 dop_lab_5
+.PHONY : dop_lab_5
 
 # fast build rule for target.
-lab_7/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/build
-.PHONY : lab_7/fast
+dop_lab_5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/build
+.PHONY : dop_lab_5/fast
 
-functions.obj: functions.cpp.obj
-.PHONY : functions.obj
-
-# target to build an object file
-functions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/functions.cpp.obj
-.PHONY : functions.cpp.obj
-
-functions.i: functions.cpp.i
-.PHONY : functions.i
-
-# target to preprocess a source file
-functions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/functions.cpp.i
-.PHONY : functions.cpp.i
-
-functions.s: functions.cpp.s
-.PHONY : functions.s
-
-# target to generate assembly for a file
-functions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/functions.cpp.s
-.PHONY : functions.cpp.s
-
-main.obj: main.cpp.obj
-.PHONY : main.obj
+dop_lab_5_v2.obj: dop_lab_5_v2.cpp.obj
+.PHONY : dop_lab_5_v2.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+dop_lab_5_v2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/dop_lab_5_v2.cpp.obj
+.PHONY : dop_lab_5_v2.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+dop_lab_5_v2.i: dop_lab_5_v2.cpp.i
+.PHONY : dop_lab_5_v2.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/main.cpp.i
-.PHONY : main.cpp.i
+dop_lab_5_v2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/dop_lab_5_v2.cpp.i
+.PHONY : dop_lab_5_v2.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+dop_lab_5_v2.s: dop_lab_5_v2.cpp.s
+.PHONY : dop_lab_5_v2.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab_7.dir\build.make CMakeFiles/lab_7.dir/main.cpp.s
-.PHONY : main.cpp.s
+dop_lab_5_v2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dop_lab_5.dir\build.make CMakeFiles/dop_lab_5.dir/dop_lab_5_v2.cpp.s
+.PHONY : dop_lab_5_v2.cpp.s
 
 # Help Target
 help:
@@ -184,13 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... lab_7
-	@echo ... functions.obj
-	@echo ... functions.i
-	@echo ... functions.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... dop_lab_5
+	@echo ... dop_lab_5_v2.obj
+	@echo ... dop_lab_5_v2.i
+	@echo ... dop_lab_5_v2.s
 .PHONY : help
 
 
