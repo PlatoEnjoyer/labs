@@ -1,49 +1,48 @@
 #include <iostream>
 #include <cmath>
+#include <random>
 
+using namespace std;
 
-
-
-int main()
-{
-    int a = 1000;
-    int b = 1000;
-    int ans = 0;
-    int x1;
-    int y1;
-    int r1;
-    int x2;
-    int y2;
-    int r2;
-
-    int x;
-    int y;
-    int cnt;
-    int n = 10;
-
-    std::cin >> x1 >> y1 >> r1 >> x2 >> y2 >> r2;
-
-    int circle[n][n];
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            circle[i][j] = 0;
+int main() {
+    // Ввод координат центров и радиусов двух кругов
+    int x1, y1, r1, x2, y2, r2;
+    cout << "Введите координаты центра первого круга (x1, y1): ";
+    cin >> x1 >> y1;
+    cout << "Введите радиус первого круга (r1): ";
+    cin >> r1;
+ 
+    cout << "Введите координаты центра второго круга (x2, y2): ";
+    cin >> x2 >> y2;
+    cout << "Введите радиус второго круга (r2): ";
+    cin >> r2;
+ 
+    // Определение функции для проверки принадлежности точки кругу
+    bool isPointInCircle(double x, double y, int r) {
+        return sqrt((x - x1) * (x - x1) + (y - y1) * (y - y1)) <= r;
+    }
+ 
+    // Генерация случайных точек внутри квадрата размером 1000x1000
+    const int N = 10000; // Количество случайных точек
+    double totalArea = 0.0;
+    for (int i = 0; i < N; ++i) {
+        double x = rand() % 1000 / 10.0; // Случайная координата x в диапазоне [0, 1000]
+        double y = rand() % 1000 / 10.0; // Случайная координата y в диапазоне [0, 1000]
+ 
+        // Проверка принадлежности каждой точки первому кругу
+        if (isPointInCircle(x, y, r1)) {
+            totalArea += 1.0;
+        }
+        // Проверка принадлежности каждой точки второму кругу
+        if (isPointInCircle(x, y, r2)) {
+            totalArea += 1.0;
         }
     }
-
-    circle[x1 + r1][y1] = 1;
-    circle[x1 - r1][y1] = 1;
-    circle[x1][y1 + r1] = 1;
-    circle[x1][y1 - r1] = 1;
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            std::cout << circle[i][j];
-        }
-        std::cout << std::endl;
-    }
+ 
+    // Вычисление суммарной площади двух кругов методом Монте-Карло
+    totalArea *= 1000 * 1000 / N;
+ 
+    // Вывод результата
+    cout << "Суммарная площадь двух кругов: " << totalArea << endl;
+    return 0;
 }
