@@ -365,7 +365,7 @@ void sort_lst_by_last_digit(OneLinkedList& lst)
 int main()
 {
     OneLinkedList lst;
-    get_numbers(3, lst);
+    get_numbers(5, lst);
 
     if (is_sorted_by_first_digit(lst) or is_sorted_by_last_digit(lst))
     {
