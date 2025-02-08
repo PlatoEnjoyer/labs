@@ -35,9 +35,9 @@ void solution(int i, int j, int score, std::string matrix[n][m], int score_matri
 
 int main()
 {
-    std::string matrix[n][m] = {{"S", ".", ".", ".", "#"},
-                                {"#", "#", ".", "#", "#"},
-                                {"#", "#", "#", "#", "E"}};
+    std::string matrix[n][m] = {{"S", ".", "#", "#", "#"},
+                                {".", ".", ".", "#", "#"},
+                                {"#", "#", ".", "#", "E"}};
 
     int score_matrix[n][m];
 
@@ -51,23 +51,13 @@ int main()
     
     solution(0, 0, 0, matrix, score_matrix);
 
-    for (int i = 0; i < n; i++)
+    if (score_matrix[n-1][m-1] == INT_MAX)
     {
-        for (int j = 0; j < m; j++)
-        {
-            std::cout << matrix[i][j] << " ";
-        }
-        std::cout << std::endl;
+        std::cout << -1 << std::endl;
     }
-
-    std::cout << std::endl;
-    for (int i = 0; i < n; i++)
+    else
     {
-        for (int j = 0; j < m; j++)
-        {
-            std::cout << score_matrix[i][j] << " ";
-        }
-        std::cout << std::endl;
+        std::cout << score_matrix[n-1][m-1] + 1 << std::endl;
     }
 
     return 0;

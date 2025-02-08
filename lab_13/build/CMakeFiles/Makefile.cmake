@@ -39,7 +39,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake"
-  "C:/Users/user/Desktop/labs/lab_12/lab_12_1/CMakeLists.txt"
+  "C:/Users/user/Desktop/labs/lab_13/CMakeLists.txt"
   "CMakeFiles/3.31.0-rc3/CMakeCCompiler.cmake"
   "CMakeFiles/3.31.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.0-rc3/CMakeRCCompiler.cmake"
@@ -59,5 +59,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab_12_1.dir/DependInfo.cmake"
+  "CMakeFiles/lab_13.dir/DependInfo.cmake"
   )
