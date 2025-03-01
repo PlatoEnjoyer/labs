@@ -396,7 +396,6 @@ int main()
     cin >> num;
     cin >> num1;
     num *= num1;
-    num -= num1;
     num1 -= num;
     cout << num << endl;
     cout << num1 << endl;
