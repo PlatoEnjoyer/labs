@@ -1,0 +1,3 @@
+C:/Users/user/Desktop/labs/lab_17/build/CMakeFiles/lab_17.dir
+C:/Users/user/Desktop/labs/lab_17/build/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/labs/lab_17/build/CMakeFiles/rebuild_cache.dir

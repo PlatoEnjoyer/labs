@@ -116,10 +116,10 @@ public:
         return result;
     }
 
-    template<size_t K>
-    Matrix<T, N, K> operator*=(const Matrix<T, M, K>& other)
+    Matrix& operator*=(const Matrix& other)
     {
-        return (*this * other); 
+        *this = *this * other;
+        return *this; 
     }
 
     void operator++(int)
@@ -186,6 +186,7 @@ int main()
     Matrix<float, 2, 2> matrix2;
     std::cout << "Enter another 2x2 matrix elements:" << std::endl;
     std::cin >> matrix2;
+    matrix2++;
 
     std::cout << "Matrix 1:" << std::endl << matrix1;
     std::cout << "Matrix 2:" << std::endl << matrix2;
@@ -193,8 +194,11 @@ int main()
     Matrix<float, 2, 2> matrix3 = matrix1 + matrix2;
     std::cout << "Matrix 1 + Matrix 2:" << std::endl << matrix3;
 
-    Matrix<float, 2, 2> mat4 = matrix1 * matrix2;
-    std::cout << "Matrix 1 * Matrix 2:" << std::endl << mat4;
+    matrix1 *= matrix2;
+    Matrix<float, 2, 2> matrix4 = matrix1 * matrix2;
+    std::cout << "Matrix 1 * Matrix 2:" << std::endl << matrix4;
+
+    std::cout << "Det of Matrix 1 * Matrix 2: " <<  matrix4.determinant() << std::endl;
 
     return 0;
 }
