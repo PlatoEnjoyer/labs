@@ -1,0 +1,1 @@
+  -LC:/Users/user/Desktop/labs/lab_19/ext/SFML/lib  -lsfml-graphics-s-d -lsfml-window-s-d -lsfml-system-s-d -lopengl32 -lfreetype -lwinmm -lgdi32 -lsfml-audio-s-d -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

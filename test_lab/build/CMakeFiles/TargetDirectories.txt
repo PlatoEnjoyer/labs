@@ -1,0 +1,3 @@
+C:/Users/user/Desktop/labs/test_lab/build/CMakeFiles/lab_19.dir
+C:/Users/user/Desktop/labs/test_lab/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/user/Desktop/labs/test_lab/build/CMakeFiles/ZERO_CHECK.dir
