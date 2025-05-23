@@ -36,12 +36,10 @@ public:
     public:
         BitProxy(Vector<bool>& cont, size_t pos) : container(cont), bit_pos(pos) {}
 
-        // Преобразование в bool
         operator bool() const {
             return (container.data[byte_index(bit_pos)] & bit_mask(bit_pos)) != 0;
         }
 
-        // Присваивание значения
         BitProxy& operator=(bool value) {
             if (value) {
                 container.data[byte_index(bit_pos)] |= bit_mask(bit_pos);
@@ -51,7 +49,6 @@ public:
             return *this;
         }
 
-        // Присваивание другого BitProxy
         BitProxy& operator=(const BitProxy& other) {
             *this = static_cast<bool>(other);
             return *this;
